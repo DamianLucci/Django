@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+      <h1>Lista de mis familiares</h1>
+      <ul>
+          {% for familiar in listado_familiares %}
+          <li>  
+          <p>Nombre: {{familiar.nombre}}</p>
+            <p>Apellido: {{familiar.apellido}}</p>
+            <p>Nacimiento: {{familiar.fecha_nac}} </p>
+          </li>    
+          {% endfor %}
+       </ul>    
+    </body>    
+</html>
